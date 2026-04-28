@@ -760,7 +760,7 @@ async function renderCard(){
       <div class="ai-badge"><span class="ai-dot"></span>AI · ${vocabPool.length} kata</div>
       <div class="card-meta"><span class="level-tag ${levelClass}">${q.level}</span><span class="cat-tag">${q.category||'Vocab'}</span></div>
       <div class="card-number">Soal #${totalSeen}</div>
-      <div class="q-text">Apa arti kata <strong style="color:var(--accent);font-style:italic;">"${q.word}"</strong>?</div>
+      <div class="q-text">Apa arti kata <strong style="color:var(--accent);font-style:revert;">"${q.word}"</strong>?</div>
       <div class="q-hint">${q.phonetic||''} · ${q.pos||''}</div>
       <button class="speak-btn" id="speak-main" onclick="speakWord('${q.word.replace(/'/g,"\\'")}')">🔊 DENGAR</button>`;
     renderQuizOpts(q);
